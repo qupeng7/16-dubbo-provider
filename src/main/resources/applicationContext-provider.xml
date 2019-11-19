@@ -19,7 +19,7 @@
     <dubbo:registry address="nacos://192.168.211.129:8848" />
 
     <!--spring ioc容器中的一个bean-->
-    <bean id="userService" class="com.qupeng.service.impl.UserServiceImpl"/>
+    <bean id="userService" class="UserServiceImpl"/>
 
     <!--dubbo暴露服务，让其他服务可以来调用-->
     <dubbo:service interface="com.qupeng.service.UserService" ref="userService" />
